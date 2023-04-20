@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><?php echo "{$page_title} - Musings with Mikey"; ?></title>
+<link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+	<div class="navbar">
+		<nav style="width: 100%;">
+			<div style="display: flex; margin-left: 7px;">
+				<img src="images/logo.jpg" class="logo">
+				<p style="padding-left: 5px; padding-top: 0px; padding-right: 5px; border: 2px solid black;">Musings with Mikey</p>
+			</div>
+			<div style="width: auto">
+				<ul style="width: 100%; display: flex;">
+					<?php if ( (isset($_SESSION['user_id'])) ) {
+						echo '<li style="width: auto; display: flex; background-color: lightblue;">
+							<img src="images/ui/user.png" width="20" height="20" style="border-radius: 5px;">
+							<a href="profile.php" style="padding: 0; padding-right:5px; overflow: hidden;">' . $_SESSION['username'] . '</a>
+						</li>'; } ?>
+					<li><a href="index.php">Home</a></li>
+					<?php if ( (isset($_SESSION['user_id'])) ) {
+						echo '<li><a href="blogs.php">Blogs</a></li>'; } ?>
+					<?php if ( (isset($_SESSION['user_id'])) ) {
+						echo '<li><a href="videos.php">Videos</a></li>'; } ?>	
+					<?php if ( (isset($_SESSION['user_id'])) ) {
+						echo '<li><a href="contact.php">Contact Me</a></li>'; } ?>
+					<li class="login"><?php if ( (!isset($_SESSION['user_id'])) ) {
+						echo '<a href="login.php">Login/Register</a>'; } else {echo '<a href="logout.php">Logout</a>';} ?></li>
+					<!-- <li class="login"><a href="login.php">Login/Register</a></li> -->
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+<div class="container">

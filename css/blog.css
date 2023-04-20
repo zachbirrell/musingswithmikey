@@ -1,0 +1,215 @@
+div.blog-card {
+    height: 100%;
+    padding: 10px;
+}
+
+div.blog-header {
+    width: 100%; 
+    height: 100%; 
+    border: 1px solid black; 
+    display: flex; 
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#blog-title {
+    color: yellow;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+#title-container {
+    color: white;
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding-top: 100px; 
+    padding-bottom: 100px;
+    backdrop-filter: blur(4px);
+}
+
+div.blog-body {
+    /* margin: 10px; */
+    /* display: flex; */
+    border: 1px solid black;
+    width: 100%;
+}
+
+div#blog-published {
+    padding: 5px;
+}
+
+div.blog-content {
+    font-size: medium;
+    padding: 10px;
+    width: 100%;
+}
+
+div.blog-content::first-letter {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#a-thumbnail {
+    width: 207px; 
+    cursor: pointer;
+}
+
+#a-thumbnail:hover {
+    background-color: green;
+    color: white;
+}
+
+#a-header-container {
+    width: 100%; 
+    padding-top: 100px; 
+    padding-left: 4%; 
+    padding-bottom: 100px;
+}
+
+#a-title {
+    /* text-transform: uppercase;  */
+    border-width: 0px; 
+    border: none; 
+    width: 11%; 
+    height: 25px; 
+    text-align: center; 
+    width: 205px; 
+    margin-bottom: 5px;
+}
+
+#a-submit {
+    padding: 5px; 
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#a-submit:hover {
+    padding: 5px; 
+    background-color: blue;
+    cursor: pointer;
+    color: white;
+}
+
+.comment {
+    border: 1px solid black;
+    margin-bottom: 7px;
+}
+
+#comment-username {
+    padding-top: 4px;
+}
+
+#comment-date {
+    font-size: 12;
+    /* color: aqua; */
+    font-style: italic;
+}
+
+#comment-body {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+
+#comment-delete {
+    margin-left: 50px;
+    margin-bottom: 15px;
+    margin-top: 3px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+#comment-edit {
+    margin-left: 5px;
+    margin-bottom: 15px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+#comment-textarea {
+    margin-left: 50px;
+    width: 95%;
+    height: auto;
+    background-color: transparent;
+    border: 0px;
+    resize: none;
+    overflow: auto;
+}
+
+.badge {
+    margin-left: 7px;
+    border-radius: 5px;
+    padding: 3px;
+    height: 23px;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-top: 6px;
+    color: white;
+}
+
+#public-badge {
+    background-color: green;
+}
+
+#hidden-badge {
+    background-color: lightblue;
+    color: black;
+}
+
+#private-badge {
+    background-color: red;
+}
+
+.comment {
+    border: 1px solid black;
+    margin-bottom: 7px;
+}
+
+#comment-username {
+    padding-top: 4px;
+}
+
+#comment-date {
+    font-size: 12;
+    /* color: aqua; */
+    font-style: italic;
+}
+
+.comment-body {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.comment-delete {
+    margin-left: 5px;
+    margin-bottom: 15px;
+    margin-top: 3px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.comment-edit {
+    margin-left: 50px;
+    margin-bottom: 15px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+#comment-textarea {
+    margin-left: 50px;
+    width: 95%;
+    height: auto;
+    background-color: transparent;
+    border: 0px;
+    resize: none;
+    overflow: auto;
+}
